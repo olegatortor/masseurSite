@@ -1,3 +1,5 @@
+@import 'blocks/fonts';
+
 * {
     margin: 0;
     padding: 0;
@@ -15,6 +17,16 @@
     margin: 0 auto;
 }
 
+.title {
+    padding-top: 55px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #1C1919;
+    font-size: 40px;
+    font-family: 'MontserratAlternates-Bold';
+    line-height: normal;
+}
+
 .btn {
     width: 265px;
     height: 46px;
@@ -28,4 +40,4 @@
 }
 
 @import 'blocks/promo';
-@import 'blocks/fonts';
+@import 'blocks/about';
