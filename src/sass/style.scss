@@ -15,4 +15,17 @@
     margin: 0 auto;
 }
 
+.btn {
+    width: 265px;
+    height: 46px;
+    border-radius: 10px;
+    background: #313E2C;
+    color: #FFF;
+    font-size: 20px;
+    font-family: 'MontserratAlternates-Regular';
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
 @import 'blocks/promo';
+@import 'blocks/fonts';
