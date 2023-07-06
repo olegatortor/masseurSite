@@ -6,6 +6,7 @@
     box-sizing: border-box;
     a {
         text-decoration: none;
+        color: #fff;
     }
     ul {
         list-style-type: none;
@@ -25,9 +26,19 @@
     font-size: 40px;
     font-family: 'MontserratAlternates-Bold';
     line-height: normal;
+    &_thin {
+        font-family: 'MontserratAlternates-Thin';
+    }
+    &_footer {
+        font-family: 'MontserratAlternates-Thin';
+        color: #FFF;
+        font-size: 32px;
+        padding-top: 25px;
+    }
 }
 
 .btn {
+    z-index: 2;
     width: 265px;
     height: 46px;
     border-radius: 10px;
@@ -42,3 +53,5 @@
 @import 'blocks/promo';
 @import 'blocks/about';
 @import 'blocks/services';
+@import 'blocks/signup';
+@import 'blocks/footer';

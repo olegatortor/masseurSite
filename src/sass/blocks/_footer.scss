@@ -1,0 +1,37 @@
+.footer {
+    background-color: #1D1311;
+
+    &__wrapper {
+        padding: 30px 0 30px 60px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    &__item {
+        position: relative;
+        font-family: 'MontserratAlternates-Thin';
+        color: #fff;
+    }
+
+    .phone::before, .email::before, .inst::before {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -20px;
+        width: 15px;
+        height: 15px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .phone::before {
+        background-image: url('../img/phone.svg');
+    }
+    .email::before {
+        background-image: url('../img/email.svg');
+    }
+    .inst::before {
+        background-image: url('../img/inst.svg');
+    }
+}
