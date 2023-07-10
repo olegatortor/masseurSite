@@ -44,9 +44,9 @@
             right: 100%; 
             top: 50%;
             transform: translateY(-50%);
-            border-top: 60px solid transparent;
+            border-top: 55px solid transparent;
             border-right: 7px solid #313E2C;
-            border-bottom: 60px solid transparent;
+            border-bottom: 55px solid transparent;
         }
         &::after {
             content: "";
@@ -56,9 +56,9 @@
             left: 100%; 
             top: 50%;
             transform: translateY(-50%);
-            border-top: 60px solid transparent;
+            border-top: 55px solid transparent;
             border-left: 7px solid #313E2C;
-            border-bottom: 60px solid transparent;
+            border-bottom: 55px solid transparent;
         }
     }
 

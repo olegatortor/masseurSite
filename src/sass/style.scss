@@ -1,4 +1,5 @@
 @import 'blocks/fonts';
+@import 'base/media';
 
 * {
     margin: 0;
@@ -49,6 +50,29 @@
     font-weight: 400;
     text-transform: uppercase;
 }
+
+.interactive-path {
+    fill: transparent;
+    transform: translateX(8px);
+    cursor: pointer;
+  }
+  
+  .interactive-path:hover {
+    fill: lightgray;
+  }
+  
+  .interactive-path:hover {
+    fill: rgba(0, 0, 0, 0.4);
+  }
+  #body {
+    transform: translateY(44px);
+  }
+  #arms {    
+    transform: translate(25px,69px);
+  }
+  #legs {   
+     transform: translate(12px,200px);
+  }
 
 @import 'blocks/promo';
 @import 'blocks/about';
