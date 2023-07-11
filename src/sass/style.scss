@@ -56,6 +56,16 @@
     &:hover {
         background: #87B24A;
     }
+    &_dark {
+        color: rgb(255, 255, 255);
+        width: auto;
+        background-color: #000000ab;
+        margin-top: 10px;
+        &:hover {
+            color: rgba(255, 255, 255, 0.541);
+            background: #00000049;
+        }
+    }
 }
 
 
@@ -66,6 +76,8 @@
     display: none;
 }
 
+
+@import 'blocks/modal';
 @import 'blocks/promo';
 @import 'blocks/about';
 @import 'blocks/services';
