@@ -1,5 +1,6 @@
-@import 'blocks/fonts';
+@import 'base/fonts';
 @import 'base/media';
+@import 'base/animation';
 
 * {
     margin: 0;
@@ -55,6 +56,14 @@
     &:hover {
         background: #87B24A;
     }
+}
+
+
+.show {
+    display: block;
+}
+.hide {
+    display: none;
 }
 
 @import 'blocks/promo';
