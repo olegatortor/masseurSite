@@ -44,35 +44,18 @@
     height: 46px;
     border-radius: 10px;
     background: #313E2C;
+    transition: all .5s;
     color: #FFF;
     font-size: 20px;
     font-family: 'MontserratAlternates-Regular';
     font-weight: 400;
     text-transform: uppercase;
-}
-
-.interactive-path {
-    fill: transparent;
-    transform: translateX(8px);
+    border: none;
     cursor: pointer;
-  }
-  
-  .interactive-path:hover {
-    fill: lightgray;
-  }
-  
-  .interactive-path:hover {
-    fill: rgba(0, 0, 0, 0.4);
-  }
-  #body {
-    transform: translateY(44px);
-  }
-  #arms {    
-    transform: translate(25px,69px);
-  }
-  #legs {   
-     transform: translate(12px,200px);
-  }
+    &:hover {
+        background: #87B24A;
+    }
+}
 
 @import 'blocks/promo';
 @import 'blocks/about';

@@ -2,11 +2,12 @@
     background: #F5F5F5;
     min-height: 500px;
     font-family: 'MontserratAlternates-Thin';
+    padding-bottom: 50px;
 
     &__wrapper {
         position: relative;
         display: flex;
-        margin-top: 20px;
+        margin-top: 50px;
         justify-content: center;
         align-items: center;
     }
@@ -84,4 +85,79 @@
     .percentages{
         color: #F02727;
     }
+
+    &__human {
+        margin: 20px auto;
+        &_h3 {
+            text-align: center;
+            font-size: 24px;
+        }
+    }
+
+    &__box {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 520px;
+        margin-left: 30px;
+    }
+
+    &__total {
+        width: 200px;
+        height: 80px;
+        background-color: #87B24A;
+        padding: 5px;
+        text-align: center;
+        border-radius: 7px;
+        margin: 0 auto;
+    }
+
+    &__subtitle {
+        font-size: 24px;
+        font-weight: 700;
+        color: #ffffff;
+        text-transform: uppercase;
+    }
+
+    &__price {
+        margin-top: 5px;
+        border-top: 1px solid #fff;
+        font-size: 24px;
+        color: #fff;
+        span {
+            font-family: 'MontserratAlternates-Regular';
+            color: #FF4F4F;
+            font-size: 32px;
+        }
+    }
+
+    .interactive-path {
+        fill: transparent;
+        transition: all .5s;
+        transform: translateX(8px);
+        cursor: pointer;
+      }
+      
+      .interactive-path:hover {
+        fill: lightgray;
+      }
+      
+      .interactive-path:hover {
+        fill: rgba(0, 0, 0, 0.5);
+      }
+      #body {
+        transform: translateY(44px);
+      }
+      #arms {    
+        transform: translate(25px,69px);
+      }
+      #legs {   
+         transform: translate(12px,200px);
+      }
 }
