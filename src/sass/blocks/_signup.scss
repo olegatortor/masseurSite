@@ -13,6 +13,8 @@
     }
 
     &__input {
+        position: relative;
+        z-index: 2;
         width: 265px;
         height: 46px;
         background: #F5F5F5;
@@ -41,6 +43,7 @@
     }
 
     &__title {
+        position: relative;
         font-family: 'Spectral SC';
         margin-top: 70px;
         text-align: center;
@@ -48,6 +51,7 @@
         font-family: Spectral SC;
         font-size: 32px;
         font-weight: 100;
+        z-index: 2;
     }
 
     &__timer {
@@ -72,6 +76,7 @@
         font-size:16px;
         font-weight:300;
         text-align:center;
+        transition: all .5s;
         
         span{
             display:block;
@@ -109,6 +114,8 @@
     }
 
     &__total {
+        position: relative;
+        z-index: 2;
         width: 200px;
         height: 80px;
         background-color: #87B24A;
@@ -132,7 +139,7 @@
         color: #fff;
         span {
             font-family: 'MontserratAlternates-Regular';
-            color: #FF4F4F;
+            color: #d12222;
             font-size: 32px;
         }
     }
