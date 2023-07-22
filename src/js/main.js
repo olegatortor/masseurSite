@@ -169,4 +169,66 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
     modal('.modal', '[data-open]')
+
+
+
+
+    const human = document.querySelectorAll('[data-human]'),
+          totalPrice = document.querySelector('.signup__price span'),
+          head = document.querySelector('.signup_head'),
+          body = document.querySelector('.signup_body'),
+          arms = document.querySelector('.signup_arms'),
+          legs = document.querySelector('.signup_legs');
+    let total = 0;
+
+    function tooglePart(){
+        human.forEach(item => {
+            item.addEventListener('click', () => {
+                item.classList.toggle('interactive-active');
+                if(item.classList.contains('interactive-active')) {
+                    createTotal(item, 'plus');
+                } else {
+                    createTotal(item, 'minus');
+                }
+            })
+        })
+    }
+    tooglePart();
+
+    function createTotal(item, operator) {
+        const arg = operator === 'plus' ? [50, 150]: [-50, -150];
+
+        item.classList.forEach((className) => {
+            switch (className) {
+                case 'head':
+                    total += arg[0];
+                    showContent(head);
+                    break;
+                case 'body':
+                    total += arg[1];
+                    showContent(body);
+                    break;
+                case 'arms':
+                    total += arg[0];
+                    showContent(arms);
+                    break;
+                case 'legs':
+                    total += arg[1];
+                    showContent(legs);
+                    break;
+                default:
+                    break;
+            }
+        });
+        pushTotal(total)
+    }
+
+    function showContent(el) {
+        el.classList.toggle('signup__show');
+    }
+
+    function pushTotal(total = 0) {
+        totalPrice.textContent = `${total}`
+    }
+    pushTotal(total)
 })
