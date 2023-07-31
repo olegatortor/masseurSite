@@ -48,6 +48,11 @@ gulp.task('scripts', function () {
         .pipe(gulp.dest("dist/js"))
         .pipe(browserSync.stream());
 });
+gulp.task('scriptsPhp', function () {
+    return gulp.src("src/js/**/*.php")
+        .pipe(gulp.dest("dist/php"))
+        .pipe(browserSync.stream());
+});
 
 gulp.task('fonts', function () {
     return gulp.src("src/fonts/**/*")
@@ -67,4 +72,4 @@ gulp.task('images', function () {
         .pipe(gulp.dest("dist/img"));
 });
 
-gulp.task('default', gulp.parallel('watch', 'server', 'styles', 'scripts', 'fonts', 'icons', 'html', 'images'));
+gulp.task('default', gulp.parallel('watch', 'server', 'styles', 'scripts', 'fonts', 'icons', 'html', 'images', 'scriptsPhp'));
